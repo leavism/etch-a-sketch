@@ -1,0 +1,13 @@
+.canvas {
+    display: grid;
+    border: black solid 2px;
+    height: 1000px; width: 1000px
+}
+
+.cell {
+    border: dashed black 1px;
+}
+
+/* .cell:hover {
+    background:black;
+} */
