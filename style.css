@@ -1,9 +1,66 @@
-.canvas {
-    display: grid;
-    border: black solid 2px;
-    height: 700px; width: 700px
+* {
+    font-size: 10pt;
 }
 
-.graCheck {
-    display:block;
+#container {
+  display: grid;
+  width: 950px;
+  height: 750px;
+  grid-template-areas:
+    "nav canvas canvas color"
+    "nav canvas canvas color";
+  grid-template-columns: 125px 350px 350px 125px;
+  grid-template-rows: 375px 375px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 0 auto;
+  background: rgb(255, 87, 87);
+}
+
+.canvas {
+  display: grid;
+  grid-area: canvas;
+  height: 700px;
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 2px 2px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 20px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 20px -1px rgba(0, 0, 0, 0.75);
+  border: black 1px solid;
+}
+
+.color {
+  grid-area: color;
+  margin-left: 10px;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.color button {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav button {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+button {
+  border: black 1px solid;
+  background: white;
+  border-radius: 10px;
+  display: block;
+}
+
+button:active {
+  color: black;
+  border: dashed black 1px;
 }
