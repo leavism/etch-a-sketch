@@ -91,9 +91,7 @@ function makeCanvas(sides) {
 
   for (var y = 0; y < sides; y++) {
     for (var x = 0; x < sides; x++) {
-      if ((x + y) % 2 == 0) {
-        color = "white";
-      } else color = "white";
+
       createCell(canvas, color);
     }
   }
