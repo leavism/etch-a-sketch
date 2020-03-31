@@ -45,12 +45,12 @@ function start(sides) {
       }
     });
   });
-
-  resetBtn.addEventListener("click", () => {
-    container.removeChild(container.firstElementChild);
-    start(sides);
-  });
 }
+
+resetBtn.addEventListener("click", () => {
+  container.removeChild(container.firstElementChild);
+  start(sides);
+});
 
 graBtn.addEventListener("click", () => {
   black = null;
